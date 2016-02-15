@@ -169,6 +169,14 @@ p.copyright {
     margin: 15px 0 0;
 }
 
+
+/* ?? not right yet */
+hr.secondary {
+    width:30%;
+    border-bottom-color: rgb(51, 51, 51);
+    line-height: 20px;
+}
+
 .videoWrapper {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
@@ -183,35 +191,23 @@ p.copyright {
     height: 100%;
 }
 
-/* icons for links in team pics */
-.cardspan {
-  width: 20px;
-  height: 20px;
-  background: url("/img/icons/githubwhite.png") center;
-  display: inline-block;
-  margin-top: 10px;
-}
-.cardspan2 {
-  width: 14px;
-  height: 14px;
-  background: url("/img/icons/linkedin.png") center;
-  display: inline-block;
-  margin-top: 10px;
-  margin-left: 10%;
-}
-.blog {
-  width: 20px;
-  height: 20px;
-  background: url("/img/icons/blog.png") center;
-  display: inline-block;
-  margin-top: 10px;
-  margin-left: 10%;
+.team {
+    width: 90%;
+    margin: 0 auto;
 }
 
-@media(min-width: 768px){
+.thumbImage {
+    max-width: 50%;
+    max-height: 90%;
+    border-radius: 50%;
+}
+
+
+@media(min-width: 768px) {
     @media(max-width: 993px) {
         .videoWrapper {
             margin-top: 13%;
         }
     }
 }
+
