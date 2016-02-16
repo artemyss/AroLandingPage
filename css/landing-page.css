@@ -171,11 +171,13 @@ p.copyright {
 
 
 /* ?? not right yet */
-hr.secondary {
+.hrsmall {
     width:30%;
-    border-bottom-color: rgb(51, 51, 51);
+    margin-left: 35.33333%;
+    margin-bottom: 10%;
+/*    border-bottom-color: rgb(51, 51, 51);
     line-height: 20px;
-}
+*/}
 
 .videoWrapper {
     position: relative;
@@ -202,6 +204,24 @@ hr.secondary {
     border-radius: 50%;
 }
 
+/* Social Icons for team members */
+.cardspan {
+  width: 20px;
+  height: 20px;
+  background: url("../img/icons/githubblack.png") center;
+  display: inline-block;
+  margin-bottom: 6%; 
+}
+
+.cardspan2 {
+  width: 20px;
+  height: 20px;
+  background: url("../img/icons/linkedinBlack.png") center;
+  display: inline-block;
+  margin-left: 10%;
+  margin-bottom: 6%;
+}
+
 
 @media(min-width: 768px) {
     @media(max-width: 993px) {
@@ -209,5 +229,24 @@ hr.secondary {
             margin-top: 13%;
         }
     }
+}
+
+@media(max-width: 993px) {
+        .cardspan {
+            width: 20px;
+            height: 20px;
+            background: url("../img/icons/githubblack.png") center;
+            display: inline-block;
+            margin-bottom: 6%; 
+        }
+
+        .cardspan2 {
+            width: 20px;
+            height: 20px;
+            background: url("../img/icons/linkedinBlack.png") center;
+            display: inline-block;
+            margin-left: 3%;
+            margin-bottom: 6%;
+        }
 }
 
