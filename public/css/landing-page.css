@@ -35,7 +35,7 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/Aro_Blue_Large.png) no-repeat center center;
+    background: url(../img/AroCity.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -116,7 +116,7 @@ h6 {
 .banner {
     padding: 100px 0;
     color: #f8f8f8;
-    background: url(../img/banner-bg.jpg) no-repeat center center;
+    background: url(../img/banner-blue.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -158,7 +158,23 @@ h6 {
     ul.banner-social-buttons > li:last-child {
         margin-bottom: 0;
     }
+
+    .gitHub {
+        float: right;
+        margin-top: -40px;
+    }
 }
+
+/* github link styling */
+.checkGitHub {
+    color: white;
+}
+
+a.checkGitHub:hover {
+    text-decoration: none;
+    color: #23527C;
+}
+/* end github link styling */
 
 footer {
     padding: 50px 0;
@@ -169,16 +185,15 @@ p.copyright {
     margin: 15px 0 0;
 }
 
-
-/* ?? not right yet */
+/* custom hr for 'Team' section */
 .hrsmall {
     width:30%;
     margin-left: 35.33333%;
     margin-bottom: 10%;
-/*    border-bottom-color: rgb(51, 51, 51);
-    line-height: 20px;
-*/}
+}
+/* end custom hr for 'Team' section */
 
+/* responsive video */
 .videoWrapper {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
@@ -192,7 +207,9 @@ p.copyright {
     width: 100%;
     height: 100%;
 }
+/* end responsive video */
 
+/* Team section */
 .team {
     width: 90%;
     margin: 0 auto;
@@ -221,7 +238,7 @@ p.copyright {
   margin-left: 10%;
   margin-bottom: 6%;
 }
-
+/* End Team Section */
 
 @media(min-width: 768px) {
     @media(max-width: 993px) {

@@ -1,0 +1,27 @@
+{
+  "name": "Aro_Landing_Page",
+  "version": "0.0.1",
+  "description": "A landing page for the Aro app.",
+  "main": "index.html",
+  "scripts": {
+    "start": "node index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artemyss/AroLandingPage.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/artemyss/AroLandingPage/issues"
+  },
+  "homepage": "https://github.com/artemyss/AroLandingPage#readme",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "cors": "^2.7.1",
+    "express": "^4.13.3"
+  },
+  "engines": {
+    "node": "0.12.7"
+  }
+}
