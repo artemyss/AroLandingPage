@@ -2,7 +2,7 @@
   "name": "Aro_Landing_Page",
   "version": "0.0.1",
   "description": "A landing page for the Aro app.",
-  "main": "index.html",
+  "main": "app.js",
   "scripts": {
     "start": "node index.html"
   },
