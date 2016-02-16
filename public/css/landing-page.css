@@ -199,6 +199,7 @@ p.copyright {
     padding-bottom: 56.25%; /* 16:9 */
     padding-top: 25px;
     height: 0;
+    margin-bottom: 5%;
 }
 .videoWrapper iframe {
     position: absolute;
@@ -227,7 +228,7 @@ p.copyright {
   height: 20px;
   background: url("../img/icons/githubblack.png") center;
   display: inline-block;
-  margin-bottom: 6%; 
+  margin-bottom: 15%; 
 }
 
 .cardspan2 {
@@ -236,7 +237,7 @@ p.copyright {
   background: url("../img/icons/linkedinBlack.png") center;
   display: inline-block;
   margin-left: 10%;
-  margin-bottom: 6%;
+  margin-bottom: 15%;
 }
 /* End Team Section */
 
@@ -245,6 +246,12 @@ p.copyright {
         .videoWrapper {
             margin-top: 13%;
         }
+    }
+}
+
+@media(min-width: 992px) {
+    div.service-box {
+        margin-top: -15%;
     }
 }
 
