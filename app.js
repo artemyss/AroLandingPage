@@ -15,14 +15,13 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // 	next();
 // });
 
-app.use(express.static("./public"));
+app.use(express.static("../public"));
 
-app.use(cors());
+// app.use(cors());
 
 server.listen(port, function() {
-  console.log('Running on port: ', port);
+	console.log("Express app running on port: ", port);
 });
 
-console.log("Express app running on port: ", port);
 
 module.exports = app;
