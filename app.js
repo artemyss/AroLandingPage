@@ -1,27 +1,20 @@
-var express = require("express");
-var cors = require("cors");
-var bodyParser = require("body-parser");
+var express = require('express');
+var bodyparser = require('body-parser');
+// var mongoose = require('mongoose');
+var http = require('http');
 var app = express();
-
-var server = require('http').Server(app);
+ 
+// mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/meals-development');
+app.use(express.static(__dirname + '/public'));
+ 
+app.use(bodyparser.json({limit:'50mb'}));
+app.use(bodyparser.urlencoded({limit: '50mb', extended: true}));
+ 
+require('./routes/admin-routes')(app);
+ 
+var server = http.createServer(app);
+ 
 var port = process.env.PORT || 8100;
-
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-
-// logs the request type such as 'GET' and the url path its calling 
-// app.use(function(req, res, next) {
-// 	console.log(`${req.method} request for '${req.url}' - ${JSON.stringify(req.body)}`);
-// 	next();
-// });
-
-app.use(express.static("../public"));
-
-// app.use(cors());
-
-server.listen(port, function() {
-	console.log("Express app running on port: ", port);
+app.listen(port, function() {
+console.log("Listening on " + port);
 });
-
-
-module.exports = app;
